@@ -19,25 +19,7 @@
 <!--Additional OG tags-->
 <meta name="og.email" content="me@example.com"/>
 <meta name="og.phone" content="650-123-4567"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
-<meta name="og.email" content="me@example.com"/>
+
 
 <!--Css-->
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -146,7 +128,7 @@
                         <div>
                             <label for="phone" class="input__name">Телефон</label>
                             <input type="tel" class="input__item" name="phone" id="phone" required 
-                            pattern="[8-9](10)"placeholder="Введите свой телефон">
+                            pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"placeholder="Введите свой телефон">
                         </div>
                         <button class="input__submit">Отправить</button>
                     </div>
@@ -196,12 +178,12 @@
             <div class="menu">
                 <a href ="#" class="menu__logo menu__logo_footer"></a>
                 <nav class="menu__nav">
-                    <ul class="menu__list menu__list-footer">
-                        <li class="menu__item"><a href="#header-section">Главная</a></li>
-                        <li class="menu__item"><a href="#table-section">Таблицы</a></li>
-                        <li class="menu__item"><a href="#video-section">Видео</a></li>
-                        <li class="menu__item"><a href="#form-section">Форма</a></li>
-                        <li class="menu__item"><a href="#footer-section">Контакты </a></li>
+                    <ul class="menu__list .menu__list_footer">
+                        <li class="menu__footer"><a href="#header-section">Главная</a></li>
+                        <li class="menu__footer"><a href="#table-section">Таблицы</a></li>
+                        <li class="menu__footer"><a href="#video-section">Видео</a></li>
+                        <li class="menu__footer"><a href="#form-section">Форма</a></li>
+                        <li class="menu__footer"><a href="#footer-section">Контакты </a></li>
                     </ul>
                    
                 </nav>
