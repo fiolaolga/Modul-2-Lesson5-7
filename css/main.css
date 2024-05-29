@@ -1,5 +1,5 @@
 .body{
-    margin: 0;
+   
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -32,10 +32,7 @@ h1{
    
 }
 h2{
-    font-size: 40px;
-   /* font-weight: 400;
-    font-family: 'Inter', sans-serif;*/
-   
+    font-size: 40px;   
     text-align: center;
 }
 a{
@@ -68,6 +65,7 @@ li{
 }
  .menu__logo{ background-image: url("../img/лого\ \(3\).png");
     background-size: contain ;
+   background-repeat: no-repeat;
     width: 189px;
     height: 32px;
     display: block;
@@ -247,14 +245,14 @@ li{
     text-align: center;
     border-radius: 5px;
     border: none;
-    background-color: #1A71CE; 
+    background:  linear-gradient(180deg, #6EB0F6 9.38%, #1A71CE 100%); 
     color: #FFF;
     font-size: 20px;
     transition: all;
           
 }
 .input__submit:hover{
-    background: #372E46;
+    background: linear-gradient(90deg, rgba(135, 113, 172, 0.30) 3.26%, #372E46 97.62%);
     color:white ;
     transition: color .5s ease, background-color .5s ease;
     cursor: pointer;
@@ -300,12 +298,12 @@ li{
     background-position: center center;
     background-size: 9px 8px;
 }
-.checkbox__item:checked+label:before{
+.checkbox__item:checked+label::before{
    
     background-color: #1A71CE;
-  /*background-image:url("../img/Vector\ 9081.png");
-  В PNG галочка видна,  а в SV- нет*/
-  background-image: url("../img/Vector\ 9081\ \(1\).svg");
+  /*background-image:url("../img/Vector\ \(1\).png");*/
+  
+  background-image: url("../img/Vector.svg");
 }
 .radio__item{
     position: absolute;
@@ -317,7 +315,7 @@ li{
     align-items: center;
 }
 .radio__item+label::before{
-    content: "";
+    content: '';
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -328,12 +326,13 @@ li{
     background-position: center center;
     background-size: 8px 8px;
 }
-.radio__item:checked+label:before{
+.radio__item:checked+label::before{
    
   /* background-color:white;*/
-  /*Вот не понимаю, почему у меня эллипс включения синий, а фон- белый, все же правильно написала*/
+  /*Я снова 3 раза пересмотрела часть видео с радио кнопкой, 3 раза заново все повторила за Ксенией , и нифига, я сдаюсь , потому что вообще не понимаю, что у меня не так с этой кнопкой*/
   background-color: #1A71CE;
-  background-image:url("../img/Ellipse\ 3.svg");
+  /*background-image:url("../img/radiobutton.svg");*/
+ background-image: url("../img/Radiobutton.png");
   
 }
 
@@ -354,14 +353,14 @@ li{
     width: 42px;
     height: 18px;  
     background-color: #C2C2C2; 
-    background-image:url("../img/Ellipse\ 4.svg");
+    background-image:url("../img/checked.svg");
     border-radius: 20px;
     margin-right: 5px;
     background-repeat: no-repeat;
     background-position: 24px center;
     background-size: 17px 17px;
 }
-.button__item:checked+label:before{
+.button__item:checked+label::before{
    
     background-color:#1A71CE ;
     background-position: 1px center;
@@ -371,9 +370,19 @@ li{
     background: #372E46;
     padding: 65px 0;
 }
-.menu__list_footer{
+.menu__list_footer{    
     margin-right: 239px;
 }
+
+.menu__footer>a{
+    font-family: "Inter", sans-serif;
+}
+
+.menu__footer>a:hover{
+    color:#1A71CE  ;
+    transition:color .5s ease;
+ }
+
 .menu__logo_footer{
     width: 181px;
     background-repeat: no-repeat;
