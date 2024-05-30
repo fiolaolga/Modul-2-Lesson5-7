@@ -1,9 +1,10 @@
-.body{
-   
+body{/*Здесь точка вообще нигде не нужна, точку перед body убрала, вроде встало все нормально*/
+    margin: 0;   
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: 16px;
 }
+/*С групировкой кода- это что бы все строки без пробелов тут были, или что то еще?*/
 *{
     box-sizing: border-box;
 }
@@ -63,9 +64,11 @@ li{
     align-items: center;   
   
 }
- .menu__logo{ background-image: url("../img/лого\ \(3\).png");
+/* Название картинок изменила, лишние удалила*/
+ .menu__logo{ 
+    background-image: url("../img/лого.svg");
     background-size: contain ;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     width: 189px;
     height: 32px;
     display: block;
@@ -109,7 +112,7 @@ li{
     width: 608px;
     padding: 25px 0 45px;
     font-size: 20px;
-   text-align: left;
+    text-align: left;
     
     
 }
@@ -128,8 +131,7 @@ li{
     right: -148px;
     z-index: 0;
 }
-.offer__btn{
-    
+.offer__btn{    
     background-color: transparent;
     border: 2px solid white;
     padding: 13px 34px;
@@ -179,7 +181,7 @@ li{
     color: #fff;
     font-size: 16px;
     padding: 30px 0;
-   font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .table__row:nth-child(3){
     background: #F5F5F5;
@@ -210,11 +212,10 @@ li{
 .input-wrapper{
     display: flex;
     align-items: end;
+    font-family: "Inter", sans-serif;
     gap: 17px;
     position: relative;
-
-    font-family: "Inter", sans-serif;
-   
+      
 }
 .input-wrapper:first-child{
     margin-bottom: 54px;
@@ -257,6 +258,7 @@ li{
     transition: color .5s ease, background-color .5s ease;
     cursor: pointer;
 }
+/*стили для плэйсхолдера скопировала и перенесла в инпут item, но они там у меня и были изначально*/
 
 .input__item::placeholder{
     font-family: "Inter", sans-serif;
@@ -298,13 +300,12 @@ li{
     background-position: center center;
     background-size: 9px 8px;
 }
-.checkbox__item:checked+label::before{
-   
-    background-color: #1A71CE;
-  /*background-image:url("../img/Vector\ \(1\).png");*/
-  
-  background-image: url("../img/Vector.svg");
+/*Неправильный путь к картинке я не прописывала, такой путь появляется у меня при вставке кртинке через url. Когда название изменила, путь нормальным стал*/
+.checkbox__item:checked+label::before{    
+    background-color: #1A71CE; 
+    background-image:url("../img/vector.svg");
 }
+
 .radio__item{
     position: absolute;
     z-index: -1;
@@ -315,7 +316,7 @@ li{
     align-items: center;
 }
 .radio__item+label::before{
-    content: '';
+    content: "";
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -326,16 +327,10 @@ li{
     background-position: center center;
     background-size: 8px 8px;
 }
-.radio__item:checked+label::before{
-   
-  /* background-color:white;*/
-  /*Я снова 3 раза пересмотрела часть видео с радио кнопкой, 3 раза заново все повторила за Ксенией , и нифига, я сдаюсь , потому что вообще не понимаю, что у меня не так с этой кнопкой*/
-  background-color: #1A71CE;
-  /*background-image:url("../img/radiobutton.svg");*/
- background-image: url("../img/Radiobutton.png");
-  
+.radio__item:checked+label::before{    
+    background-color: #1A71CE; 
+    background-image:url("../img/radio.svg");
 }
-
 
 
 .button__item{
@@ -343,6 +338,7 @@ li{
     z-index: -1;
     opacity: 0;
 }
+
 .button__item+label{
     display: flex;
     align-items: center;
@@ -361,8 +357,7 @@ li{
     background-size: 17px 17px;
 }
 .button__item:checked+label::before{
-   
-    background-color:#1A71CE ;
+    background-color:#1A71CE;
     background-position: 1px center;
   
 }
@@ -373,9 +368,11 @@ li{
 .menu__list_footer{    
     margin-right: 239px;
 }
+/*размер шрифта ссылок в футере-14px*/
 
 .menu__footer>a{
     font-family: "Inter", sans-serif;
+    font-size: 14px;
 }
 
 .menu__footer>a:hover{
@@ -389,12 +386,9 @@ li{
 }
 .offer__btn_footer{
     font-size: 14px;
-  text-align: center;
-  margin: 0 auto;
-  
- 
-
-}
+    text-align: center;
+    margin: 0 auto; 
+ }
 .offer__btn_footer:hover{
     background: #FFF;
     color: #372E46;
