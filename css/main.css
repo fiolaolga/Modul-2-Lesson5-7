@@ -1,10 +1,10 @@
-body{/*Здесь точка вообще нигде не нужна, точку перед body убрала, вроде встало все нормально*/
+body{
     margin: 0;   
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: 16px;
 }
-/*С групировкой кода- это что бы все строки без пробелов тут были, или что то еще?*/
+
 *{
     box-sizing: border-box;
 }
@@ -64,7 +64,7 @@ li{
     align-items: center;   
   
 }
-/* Название картинок изменила, лишние удалила*/
+
  .menu__logo{ 
     background-image: url("../img/лого.svg");
     background-size: contain ;
@@ -258,7 +258,6 @@ li{
     transition: color .5s ease, background-color .5s ease;
     cursor: pointer;
 }
-/*стили для плэйсхолдера скопировала и перенесла в инпут item, но они там у меня и были изначально*/
 
 .input__item::placeholder{
     font-family: "Inter", sans-serif;
@@ -300,7 +299,7 @@ li{
     background-position: center center;
     background-size: 9px 8px;
 }
-/*Неправильный путь к картинке я не прописывала, такой путь появляется у меня при вставке кртинке через url. Когда название изменила, путь нормальным стал*/
+
 .checkbox__item:checked+label::before{    
     background-color: #1A71CE; 
     background-image:url("../img/vector.svg");
@@ -368,7 +367,7 @@ li{
 .menu__list_footer{    
     margin-right: 239px;
 }
-/*размер шрифта ссылок в футере-14px*/
+
 
 .menu__footer>a{
     font-family: "Inter", sans-serif;
